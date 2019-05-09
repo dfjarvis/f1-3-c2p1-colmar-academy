@@ -1,0 +1,480 @@
+html{
+  font-family: Helvetica, Arial, sans-serif
+}
+
+header{
+  display: flex;
+  height: 64px;
+  align-items: center;
+}
+
+ .headerLogo{
+  flex-grow: 1;
+  display: flex;
+  padding-left: 26px;
+  align-items: center;
+}
+
+.logoImage{
+
+}
+
+.logoNameText{
+
+}
+.logoNameText .FirstWord{
+  font-weight: bold;
+}
+
+.logoNameText .SecondWord{
+}
+
+.NavMenu{
+  display: inline-block;
+  padding-right: 24px;
+  align-items: center;
+}
+
+.NavMenu span{
+  padding-left: 16px;
+}
+
+.MobileHeader{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerLogo {
+    display: none;
+  }
+  .NavMenu  {
+    display: none;
+  }
+  .MobileHeader{
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  .MobileHeader{
+    flex-grow: 1;
+  }
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.bannerImage
+{
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+}
+
+
+.bannerImage img{
+  width:100%;
+  height: auto;
+}
+
+.bannerText{
+
+}
+
+.bannerText h1{
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 25px;
+
+}
+
+.bannerText h2{
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 25px;
+  font-family: "Times New Roman", serif;
+
+}
+
+.bannerText .StartButton span{
+
+}
+
+.bannerText .StartButton{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .banner{
+    display: block;
+    padding-bottom: 32px;
+  }
+  .bannerImage
+  {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  .bannerText{
+   padding-left: 16px;
+  }
+  .bannerText h1{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .bannerText h2{
+    padding-bottom: 24px;
+    font-family: "Times New Roman", serif;
+  }
+  .bannerText .StartButton{
+      background-color: black;
+  }
+
+}
+
+
+.FirstSection{
+  display: flex;
+  padding-left: 24px;
+}
+
+.FirstSectionMain{
+  padding-top: 32px;
+  margin-bottom: 32px;
+  width: 60%;
+  padding-right: 24px;
+}
+
+.FirstSectionSide
+{
+    padding-top: 32px;
+    margin-bottom: 32px;
+    width: 40%;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+
+.FirstBannerImage{
+
+}
+
+.FirstBannerImage img{
+  width:100%;
+  height: auto;
+}
+
+.FirstSectionMain h1{
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 25px;
+}
+
+.FirstSectionMain h2{
+  font-size: 1.15em;
+  font-weight: normal;
+  padding-bottom: 25px;
+  font-family: "Times New Roman", serif;
+
+}
+
+.infoBox{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.infoBox.featured{
+  background-color: lightgray;
+}
+
+.infoBox .InfoBoxImage{
+  width: 35%;
+  padding: 16px;
+}
+
+.infoBox .InfoBoxImage img{
+  width: 100%;
+  height: auto;
+}
+
+.infoBox .InfoBoxText{
+  width: 65%;
+}
+
+.infoBox h1, .ThesesSideItemText h1{
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.infoBox, .ThesesSideItemText h2{
+  font-size: 1.0em;
+  font-weight: normal;
+  line-height: 1.2em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Times New Roman", serif;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .FirstSection{
+    display: flex;
+    padding-left: 0px;
+  }
+
+  .FirstSectionMain{
+    width: 0%;
+    display: none;
+  }
+  .FirstSectionSide{
+    width: 100%;
+      padding-right: 16px;
+  }
+
+  .infoBox{
+    display: block;
+    padding-bottom: 64px;
+    border-top: 0px solid lightgray;
+    border-bottom: 0px solid lightgray;
+  }
+
+  .infoBox .InfoBoxImage{
+    width: 100%;
+
+  }
+
+  .infoBox .InfoBoxText{
+    padding-left: 32px;
+  }
+  .infoBox .InfoBoxImage.campus img{
+    content: url(../images/information-campus-mobile.jpg);
+  }
+  .infoBox .InfoBoxImage.orientation img{
+    content: url(../images/information-orientation-mobile.jpg);
+  }
+  .infoBox .InfoBoxImage.lecture img{
+    content: url(../images/information-guest-lecture-mobile.jpg);
+  }
+
+  .infoBox.featured{
+    background-color: white;
+    padding-bottom: 32px;
+    border-bottom: 1px solid gainsboro;
+  }
+}
+
+
+.SecondSection{
+  background-color: gainsboro;
+  padding-top: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.mainTitle{
+  font-size: 1.5em;
+  text-align: center;
+}
+.SecondSection .mainTitle{
+  padding-bottom: 32px;
+}
+
+.SecondSection .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.LearningBox{
+  margin-left:16px;
+  margin-right:16px;
+  margin-bottom: 32px;
+  max-width: 250px;
+  background-color: white;
+}
+
+.LearningBox .imageDiv img{
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+}
+.LearningBox .title, .LearningBox .courses{
+  padding-left: 16px;
+}
+
+.LearningBox .title{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.LearningBox .courses span{
+  display: block;
+  color: black;
+}
+
+.LearningBox .courses span:first-child{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.LearningBox .courses span:last-child{
+  padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecondSection{
+    background-color: white;
+  }
+
+  .LearningBox .courses, .LearningBox .imageDiv{
+    display: none;
+  }
+
+  .LearningBox{
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .SecondSection .mainTitle{
+    padding-bottom: 16px;
+  }
+
+  .SecondSection .content{
+    display: block;
+    padding-bottom: 0px;
+    margin-bottom: 32px;
+
+  }
+
+  .LearningBox .title{
+    padding-top: 16px;
+    padding-bottom: 24px;
+    background-color: lightgray;
+    color: black;
+  }
+}
+
+.ThesisMain{
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+}
+
+.ThesisContent{
+  width: 60%;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 32px;
+}
+
+.ThesisSidebar{
+  width: 40%;
+}
+
+.ThesisVideo video{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-width: 100%;
+    background-size: contain;
+  }
+
+
+.ThesisText{
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.ThesisText h1{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.ThesisText p{
+  color: darkgray;
+}
+
+.ThesisSideItem{
+  display: flex;
+  align-items: center;
+}
+
+.ThesisSidebar .ThesisSideItem:first-child {
+background-color: gainsboro;
+}
+
+.ThesesSideItemImage{
+  width: 35%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+.ThesesSideItemImage img{
+  width: 100%;
+  height: auto;
+}
+
+.ThesesSideItemText{
+  width: 65%;
+}
+
+.ThesesSideItemText h1{
+  padding-bottom: 8px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .ThesisSidebar{
+      display:none;
+      width: 0%;
+    }
+
+    .ThesisContent{
+      width: 100%;
+  }
+
+    .ThesisText{
+      display:none;
+    }
+
+}
+
+footer{
+  margin-top: 16px;
+  margin-bottom: 32px;
+  padding-left: 24px;
+  font-size: 0.9em;
+  color: darkgray;
+
+  display: flex;
+}
+
+footer .legalText{
+  flex-grow: 1;
+}
+
+footer .footerLinks span{
+  font-weight: bold;
+  padding-right: 15px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer .footerLinks{
+    display: none;
+    }
